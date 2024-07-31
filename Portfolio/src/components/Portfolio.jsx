@@ -2,7 +2,7 @@ import React from 'react'
 import { AiFillGithub } from 'react-icons/ai'
 import { GrView } from "react-icons/gr";
 import xansite from "../assets/xansite.jpeg"
-import musicplayer from "../assets/musicplayer.png"
+import movie from "../assets/movie.png"
 import toolv from "../assets/toolv.png"
 import Reveal from './Reveal'
 
@@ -10,19 +10,19 @@ const projects = [
   {
     img: xansite,
     title: "Xananoids Website",
-    description: "UI for Club Website using HTML,CSS,JS",
+    description: "Club Website with attractive UI using HTML,CSS,JS",
     links: {
       site: "https://xananoids24.vercel.app/",
       github: "https://github.com/DARKINOO/xananoids2.0",
     },
   },
   {
-    img: musicplayer,
-    title: "Music Player Webpage",
-    description: "Initial Project using JS and React-DOM",
+    img: movie,
+    title: "Movie Recommendation Webpage",
+    description: "Animation Project using JS and Tailwind CSS",
     links: {
-      site: "#",
-      github: "#",
+      site: "https://movie-reco-page.vercel.app/",
+      github: "https://github.com/DARKINOO/Movie-Rec-page",
     },
   },
   {
