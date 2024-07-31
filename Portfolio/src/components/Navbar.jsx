@@ -3,6 +3,7 @@ import React, { useState, useRef } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
+import music from "../assets/relaxed-vlog-night-street-131746.mp3"
 import DarkModeToggle from './DarkModeToggle';
 import './Navbar.css'; // Add your CSS file for custom styles
  
@@ -48,7 +49,7 @@ const Navbar = () => {
 
     return (
         <>
-            <audio ref={audioRef} src="/src/assets/relaxed-vlog-night-street-131746.mp3" />
+            <audio ref={audioRef} src = {music} />
             <div className="fixed top-0 left-0 w-full bg-opacity-70 backdrop-blur-md z-50">
                 <div className="max-w-[1300px] mx-auto flex justify-between text-gray-900 font-bold dark:text-gray-100 text-xl items-center px-12 h-20">
                     <div>
