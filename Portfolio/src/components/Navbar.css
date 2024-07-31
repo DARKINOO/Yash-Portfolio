@@ -9,17 +9,13 @@
     transform: transform 0.5s ease-in-out;
 }
 
-@media (max-width:480px) {
-    .vertical-lines-button{
-        margin-left: 0;
-    }
-}
+
 
 .vertical-lines-button .line {
     width: 3px;
     height: 30px;
     background: #000; /* Adjust color as needed */
-    margin: 5px 0;
+    margin: 5px 0px;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -50,5 +46,12 @@
     }
     50% {
         transform: translateY(-20px);
+    }
+}
+
+
+@media (max-width:480px) {
+    .vertical-lines-button{
+        margin-left: 0;
     }
 }

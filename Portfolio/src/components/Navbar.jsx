@@ -65,6 +65,7 @@ const Navbar = () => {
                     <ul className='hidden md:flex gap-12 z-10 cursor-pointer'>
                         <li className='nav-item'><Link to='skills' smooth={true} offset={50} duration={500}>Skills</Link></li>
                         <li className='nav-item'><Link to='portfolio' smooth={true} offset={50} duration={500}>Projects</Link></li>
+                        <li className='nav-item'><Link to='timeline' smooth={true} offset={50} duration={500}>Education</Link></li>
                         <li className='nav-item'><Link to='contact' smooth={true} offset={50} duration={500}>Contact</Link></li>
                     </ul>
 
@@ -76,15 +77,18 @@ const Navbar = () => {
                         initial={false}
                         animate={nav ? 'open' : 'closed'}
                         variants={menuVariants}
-                        className='fixed left-0 top-0 w-full min-h-screen backdrop-blur-md dark:bg-gray-900 z-40'
+                        className='fixed left-0 top-0 w-full min-h-screen backdrop-blur-md bg-gray-300 dark:bg-gray-900 z-40'
                     >
                         <ul className='font-semibold text-4xl space-y-8 mt-24 text-center cursor-pointer'>
-                            <li className='nav-item'><Link to='skills' onClick={closeNav} smooth={true} offset={50} duration={500}>About</Link></li>
-                            <li className='nav-item'><Link to='portfolio' onClick={closeNav} smooth={true} offset={50} duration={500}>Portfolio</Link></li>
+                            <li className='nav-item'><Link to='skills' onClick={closeNav} smooth={true} offset={50} duration={500}>Skills</Link></li>
+                            <li className='nav-item'><Link to='portfolio' onClick={closeNav} smooth={true} offset={50} duration={500}>Projects</Link></li>
+                            <li className='nav-item'><Link to='timeline' onClick={closeNav} smooth={true} offset={50} duration={500}>Education</Link></li>
                             <li className='nav-item'><Link to='contact' onClick={closeNav} smooth={true} offset={50} duration={500}>Contact</Link></li>
+                            <li className='nav-item'><a href="https://drive.google.com/file/d/1B_GASHnmLIswSfaAn1T2ZimQdEyWo1hh/view?usp=drive_link">Resume</a></li>
                         </ul>
                     </motion.div>
                 </div>
+                <hr className='m-[1px] dark:border-white'/>
             </div>
         </>
     );

@@ -25,7 +25,7 @@ body {
   background-color: #190b1f;
 }
 body {
-  @apply bg-purple-100 text-black dark:bg-gray-900 dark:text-white;
+  @apply bg-slate-100 text-black dark:bg-gray-900 dark:text-white;
   transition: background-color 2s, color 2s;
 }
 
@@ -95,20 +95,22 @@ span {
   box-shadow: 0 0 10px 10px rgba(79, 11, 100, 0.7);
 } 
 
-/* .icon {
-  transition: 0.3s ease;
-  
+hr {
+  border: none;
+  border-top: 2px solid #000; /* Change color and thickness as needed */
+  margin: 20px 0; /* Adjust spacing as needed */
 }
 
-.icon:hover {
-  box-shadow: 0 0 10px 5px rgba(63, 62, 62, 0.7);
-} 
 
 .text-orange-600  {
   box-shadow: 0 0 10px 5px rgba(255, 165, 0, 0.7); 
-}*/
+}
 
-/* .text-blue-600  {
+.text-blue-400  {
+  box-shadow: 0 0 10px 5px rgba(0, 179, 255, 0.7); 
+}
+
+.text-blue-600  {
   box-shadow: 0 0 10px 5px rgba(0, 0, 255, 0.7);
 }
 
@@ -122,4 +124,15 @@ span {
 
 .text-green-500  {
   box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.7); 
-}  */
+} 
+
+
+/* .icon {
+  transition: 0.3s ease;
+  
+}
+
+.icon:hover {
+  box-shadow: 0 0 10px 5px rgba(63, 62, 62, 0.7);
+} */
+

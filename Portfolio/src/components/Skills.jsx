@@ -19,20 +19,20 @@ const skills = [
     {
     category: 'Frontend',
     technologies: [
-      { name: 'HTML', icon: <DiHtml5 className='text-orange-600' /> },
-      { name: 'CSS', icon: <DiCss3 className='text-blue-600' /> },
-      { name: 'Tailwind', icon: <RiTailwindCssFill className='text-blue-400'/> },
+      { name: 'HTML', icon: <DiHtml5 className='text-orange-700' /> },
+      { name: 'CSS', icon: <DiCss3 className='text-blue-700' /> },
+      { name: 'Tailwind', icon: <RiTailwindCssFill className='text-blue-300'/> },
       { name: 'Bootstrap', icon: <DiBootstrap className='text-purple-600' /> },
-      { name: 'JavaScript', icon: <DiJavascript1 className='text-yellow-500' /> },
-      { name: 'React', icon: <DiReact className='text-blue-500' /> },
+      { name: 'JavaScript', icon: <DiJavascript1 className='text-yellow-400' /> },
+      { name: 'React', icon: <DiReact className='text-blue-800' /> },
     ]
   },
   {
     category: 'Fullstack',
     technologies: [
-      { name: 'Node Js', icon: <DiNodejsSmall className='text-green-500' /> },
+      { name: 'Node Js', icon: <DiNodejsSmall className='text-green-600' /> },
       { name: 'MongoDB', icon: <DiMongodb className='text-green-600' /> },
-      { name: 'React', icon: <DiReact className='text-blue-500' /> },
+      { name: 'React', icon: <DiReact className='text-blue-800' /> },
       { name: 'GitHub', icon: <DiGithubBadge className='text-gray-600' /> },
     ]
   }
@@ -72,7 +72,7 @@ const Skills = () => {
               </div>
 
               <div className="flex gap-3">
-              <span className='text-2xl text-yellow-500'><DiJavascript1 /></span>
+              <span className='text-2xl text-yellow-400'><DiJavascript1 /></span>
                                 <span className='text-gray-700 dark:text-purple-400'>JavaScript</span>
               </div>
                                 
@@ -81,7 +81,9 @@ const Skills = () => {
             </div>
         </div>
         </Reveal>
+        
     </div>
+    <hr className='m-[20px] dark:border-white'/>
     </>
   )
 }
