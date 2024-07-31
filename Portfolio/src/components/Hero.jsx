@@ -75,7 +75,7 @@ const Hero = () => {
                 >
                     <motion.button whileHover={{ scale: 1.05, boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)"}}
                       className='z-10 cursor-pointer font-bold text-slate-800 dark:text-gray-200 md:w-auto p-4 border border-purple-900 dark:border-purple-400 rounded-xl'
-                    ><a href="https://1drv.ms/w/c/b4660f7142e86014/Ef9Ya-CgVhxEtFOXXgzpED4BKJKBPTubduq-AAWj54_eDA?e=AuPKd2">Resume</a>
+                    ><a href="https://drive.google.com/file/d/1B_GASHnmLIswSfaAn1T2ZimQdEyWo1hh/view?usp=drive_link">Resume</a>
                     </motion.button>
 
                     <div className='flex text-[27px] md:text-4xl gap-6 flex-row  text-purple-900 dark:text-purple-400 z-20'>
@@ -128,6 +128,7 @@ const Hero = () => {
             <ShinyEffect left={0} top={0} size={1000} />
         </div>
     </div>
+    <hr className='m-[1px] mx-5 dark:border-white'/>
     </>
   )
 }

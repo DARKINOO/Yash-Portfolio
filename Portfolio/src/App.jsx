@@ -5,7 +5,7 @@ import Skills from './components/Skills'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import Techline from './components/Techline'
+import Timeline from './components/Timeline'
 
 
 export default function App() {
@@ -13,9 +13,9 @@ export default function App() {
     <>
     <Navbar/>
     <Hero/>
-    {/* <Techline/> */}
     <Skills/>
     <Portfolio/>
+    <Timeline/>
     <Contact/>
     <Footer/>
     </>

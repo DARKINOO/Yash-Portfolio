@@ -15,7 +15,7 @@ const Footer = () => {
 
         </div>
 
-        <p className='text-slate-700 dark:text-gray-400 mt-5 md:mt-16'>@2024 || Developed by Yash Jain</p>
+        <p className='text-slate-700 dark:text-gray-400 mt-5 md:mt-16'>@2024 || Developed by Yash Jain.</p>
         
     </div>
   )

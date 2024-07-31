@@ -101,6 +101,32 @@ hr {
   margin: 20px 0; /* Adjust spacing as needed */
 }
 
+
+.text-orange-600  {
+  box-shadow: 0 0 10px 5px rgba(255, 165, 0, 0.7); 
+}
+
+.text-blue-400  {
+  box-shadow: 0 0 10px 5px rgba(0, 179, 255, 0.7); 
+}
+
+.text-blue-600  {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 255, 0.7);
+}
+
+.text-yellow-500  {
+  box-shadow: 0 0 10px 5px rgba(255, 255, 0, 0.7);
+}
+
+.text-blue-500  {
+  box-shadow: 0 0 10px 5px rgba(0, 191, 255, 0.7); 
+}
+
+.text-green-500  {
+  box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.7); 
+} 
+
+
 /* .icon {
   transition: 0.3s ease;
   
