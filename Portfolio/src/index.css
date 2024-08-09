@@ -23,9 +23,10 @@
 body {
   font-family: "Space Grotesk", sans-serif;
   background-color: #190b1f;
+
 }
 body {
-  @apply bg-slate-100 text-black dark:bg-gray-900 dark:text-white;
+  @apply bg-slate-100 text-black dark:bg-black dark:text-white;
   transition: background-color 2s, color 2s;
 }
 

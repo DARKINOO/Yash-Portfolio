@@ -52,7 +52,7 @@ const Timeline = () => {
     <div ref={ref} className="max-w-4xl mx-auto py-12 relative">
       <h2 className="timeline text-3xl font-bold text-center mb-12
       ">Education</h2>
-      <div className="absolute left-1/2 top-32 md:h-[100vh] h-[128vh] bottom-0 w-0.5 bg-gray-300" />
+      <div className="absolute left-1/2 top-32 md:max-h-[100vh] max-h-[128vh] bottom-0 w-0.5 bg-gray-300 overflow-y-hidden"/>
       {timelineData.map((item, index) => (
         <TimelineItem 
           key={index} 

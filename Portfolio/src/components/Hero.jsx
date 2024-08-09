@@ -20,11 +20,19 @@ import { motion } from 'framer-motion';
 
 
 const Hero = () => {
+    const icons = [
+        { Icon: DiHtml5, color: 'text-orange-600' },
+        { Icon: DiCss3, color: 'text-blue-600' },
+        { Icon: DiJavascript1, color: 'text-yellow-500' },
+        { Icon: DiReact, color: 'text-blue-500' },
+        { Icon: RiTailwindCssFill, color: 'text-blue-400' },
+        { Icon: DiNodejsSmall, color: 'text-green-500' },
+      ];
 
   return (
     <>
     <div className="mt-24 max-w-[1200px] mx-auto relative">
-        <div className="grid md:grid-cols-2 place-items-center gap-8">
+        <div className="grid md:grid-cols-2 place-items-center">
             <motion.div
             initial={{ opacity: 0, y: -50}}
             whileInView={{ opacity: 1, y:0 }}
@@ -37,7 +45,7 @@ const Hero = () => {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once:true }}
                 transition={{ duration: 1, delay: 0.5}}
-                className="dark:text-gray-200 md:text-4xl text-2xl tracking-tight mb-4" id='int'>
+                className="dark:text-gray-200 md:text-4xl text-2xl tracking-tight mb-4 mt-12" id='int'>
                     Hey, I am <br />
                     <span className='dark:text-purple-500 md:text-7xl mt-2 text-4xl' id='int2'>Yash Jain</span>
                 </motion.p>
@@ -95,26 +103,49 @@ const Hero = () => {
                     </div>
                 </motion.div>    
             </motion.div>
+           
+           
+            <div className="flex flex-col items-center justify-center">
+                 <h2 className="text-2xl md:text-4xl font-medium text-gray-600 dark:text-gray-200 mb-44 mt-4">My Tech Stack</h2>
+      <div className="relative w-16 h-40 md:w-24 md:h-44">
+        {icons.map(({ Icon, color }, index) => (
+          <div
+            key={index}
+            className={`absolute w-12 h-12 md:w-16 md:h-16 flex items-center justify-center ${color} transition-all duration-1000 ease-in-out`}
+            style={{
+              transform: `rotate(${index * 60}deg) translateY(-120px) rotate(-${index * 60}deg)`,
+              animation: `revolve 20s linear infinite`,
+              animationDelay: `${-index * (20 / 6)}s`,
+            }}
+          >
+            <Icon className="text-5xl hover:scale-125" />
+          </div>
+        ))}
+      </div>
+      <style jsx>{`
+        @keyframes revolve {
+          from {
+            transform: rotate(0deg) translateY(-120px) rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg) translateY(-120px) rotate(-360deg);
+          }
+        }
+      `}</style>
+      {/* <h2 className="text-3xl font-medium text-gray-200">My Tech Stack</h2> */}
+    </div>
+            
 
-            <motion.img
-              src={'https://media.licdn.com/dms/image/D5603AQFkCESriPkZWw/profile-displayphoto-shrink_800_800/0/1721652082579?e=1727308800&v=beta&t=lhyW4xKRL_pFSD2ym2-vbxU8jtX7DhcjBu0FHRAbMMQ'}
-              className='w-[300px] md:w-[450px] rounded-[50%]'
-              initial={{ opacity: 0, scale:0.8}}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once:true }}
-              transition={{ duration: 1}} 
-            />
-        </div>
 
-        <motion.div
+            {/* <motion.div
          initial={{ opacity: 0}}
          whileInView={{ opacity: 1 }}
          viewport={{ once:true }}
          transition={{ duration: 1, delay: 2}} 
-         className='flex flex-col gap-2 md:flex-row text-7xl px-12 cursor-pointer md:px-0 w-full justify-center items-center py-24 '
+         className='flex flex-col gap-2 md:flex-col text-7xl px-12 cursor-pointer md:px-0 w-full justify-center items-center py-24'
         >
-        <p className='text-slate-900 font-bold dark:text-gray-200 md:mr-6 my-6'>My Tech Stack</p>
-        <div className="grid grid-cols-2 gap-2 hover:scale-110 md:flex flex-row">
+        <p className='text-slate-900 font-medium dark:text-gray-200 md:mr-6 my-3 md:text-3xl md:my-5'>My Tech Stack</p>
+        <div className="grid grid-cols-2 gap-2 hover:scale-110 md:gap-4 md:grid-cols-3">
         <DiHtml5 className='text-orange-600 mx-2 icon'/>
         <DiCss3 className='text-blue-600 mx-2 icon'/>
         <DiJavascript1 className='text-yellow-500 mx-2 icon'/>
@@ -122,13 +153,25 @@ const Hero = () => {
         <RiTailwindCssFill className='text-blue-400 mx-2 icon' />
         <DiNodejsSmall className='text-green-500 mx-2 icon'/>
         </div>
-        </motion.div>
+        </motion.div> */}
+
+            {/* <motion.img
+              src={'https://media.licdn.com/dms/image/D5603AQFkCESriPkZWw/profile-displayphoto-shrink_800_800/0/1721652082579?e=1727308800&v=beta&t=lhyW4xKRL_pFSD2ym2-vbxU8jtX7DhcjBu0FHRAbMMQ'}
+              className='w-[300px] md:w-[450px] rounded-[50%]'
+              initial={{ opacity: 0, scale:0.8}}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once:true }}
+              transition={{ duration: 1}} 
+            /> */}
+        </div>
+
+       
 
         <div className='absolute inset-0 hidden md:block'>
             <ShinyEffect left={0} top={0} size={1000} />
         </div>
     </div>
-    <hr className='m-[1px] mx-5 dark:border-white'/>
+    <hr className='m-[1px] mx-5 my-[50px] dark:border-white'/>
     </>
   )
 }

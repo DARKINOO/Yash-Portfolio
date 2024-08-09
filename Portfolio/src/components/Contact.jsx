@@ -5,9 +5,9 @@ import Reveal from './Reveal'
 const Contact = () => {
   return (
     <>
-    <div className='px-4 max-w-[1000px]' id='contact'>
+    <div className='px-4 z-4 max-w-[1000px] overflow-hidden' id='contact'>
         <Reveal>
-        <div className="md:w-[50vw] md:ml-[25vw]">
+        <div className="md:w-[50vw]  md:ml-[25vw]">
             <form
                 action="https://getform.io/f/blljqrwb"
                 method="POST"
