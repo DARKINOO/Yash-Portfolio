@@ -36,7 +36,7 @@ const DarkModeToggle = () => {
   return (
     <button
       onClick={toggleDarkMode}
-      className="p-2 rounded-full focus:outline-none bg-gray-100 dark:bg-purple-800"
+      className="p-2 rounded-full focus:outline-none bg-transparent dark:bg-transparent"
     >
        {darkMode ? <PiSunDuotone/> : <GiNightSleep/>} 
     </button>

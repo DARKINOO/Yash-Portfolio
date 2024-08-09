@@ -41,7 +41,7 @@ const skills = [
 const Skills = () => {
   return (
     <>
-    <div className="max-w-[850px] mx-auto flex flex-col justify-center px-4 text-gray-700 dark:text-gray-200 pb-8 md:py-12" id="skills">
+    <div className="max-w-[850px] mx-auto flex flex-col justify-center px-8 text-gray-700 dark:text-gray-200 pb-8 md:py-12" id="skills">
         <Reveal>
         <h2 className='text-3xl font-bold mb-4 py-4 text-center'>Skills</h2>
 
