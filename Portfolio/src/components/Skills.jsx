@@ -41,39 +41,39 @@ const skills = [
 const Skills = () => {
   return (
     <>
-    <div className="max-w-[850px] mx-auto flex flex-col justify-center px-8 text-gray-700 dark:text-gray-200 pb-8 md:py-12" id="skills">
+    <div className="md:max-w-[950px] mx-auto flex flex-col justify-center px-8 text-gray-700 dark:text-gray-200 pb-8 md:py-12" id="skills">
         <Reveal>
         <h2 className='text-3xl font-bold mb-4 py-4 text-center'>Skills</h2>
 
         <div className="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8 ">
             {skills.map((skill, index) => (
-                <div key={index} className='border border-purple-900 p-6 rounded-lg bg-purple-900/10 dark:bg-purple-900/20 shadow-lg w-full md:w-[270px] hover:scale-y-125 duration-100 ease-linear'>
+                <div key={index} className='border border-black dark:border-white p-6 rounded-lg bg-gray-900/5 dark:bg-slate-900/20 shadow-lg w-full md:w-[270px] hover:scale-y-125 duration-100 ease-linear'>
                     <h3 className='text-xl font-bold mb-4 text-center'>{skill.category}</h3>
                     <div className='grid grid-cols-2 gap-4'>
                         {skill.technologies.map((tech, idx)=>(
                             <div key={idx} className='flex items-center space-x-2'>
                                 <span className='text-2xl'>{tech.icon}</span>
-                                <span className='text-gray-700 dark:text-purple-400'>{tech.name}</span>
+                                <span className='text-gray-700 dark:text-slate-300'>{tech.name}</span>
                             </div>
                         ))}
                     </div>
                 </div>
             ))}
-            <div className='border border-purple-900 p-6 rounded-lg bg-purple-900/10 dark:bg-purple-900/20 shadow-lg w-full md:w-[270px] hover:scale-y-125 duration-100 ease-linear'>
+            <div className='border border-black dark:border-white p-6 rounded-lg bg-gray-900/5 dark:bg-slate-900/20 shadow-lg w-full md:w-[270px] hover:scale-y-125 duration-100 ease-linear'>
             <h3 className='text-xl font-bold mb-4 text-center'>Languages</h3>
             <div className='grid grid-cols-2 gap-4 items-center'>
               <div className="flex gap-3"><span className='text-2xl dark:text-slate-300 text-slate-700'><SiCplusplus /></span>
-              <span className='text-gray-700 dark:text-purple-400'>C++</span>
+              <span className='text-gray-700 dark:text-slate-300'>C++</span>
               </div>
 
               <div className="flex gap-3">
               <span className='text-2xl text-orange-900 dark:text-orange-600'><DiJava /></span>
-              <span className='text-gray-700 dark:text-purple-400'>Java</span>
+              <span className='text-gray-700 dark:text-slate-300'>Java</span>
               </div>
 
               <div className="flex gap-3">
               <span className='text-2xl text-yellow-400'><DiJavascript1 /></span>
-                                <span className='text-gray-700 dark:text-purple-400'>JavaScript</span>
+                                <span className='text-gray-700 dark:text-slate-300'>JavaScript</span>
               </div>
                                 
                                

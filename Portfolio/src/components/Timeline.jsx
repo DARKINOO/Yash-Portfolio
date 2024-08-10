@@ -29,13 +29,13 @@ const TimelineItem = ({ item, index }) => {
   return (
     <div className={`flex items-center ${isEven ? 'flex-row' : 'flex-row-reverse'} mb-8`}>
       <div className={`w-[50vw] md:w-5/12 ${isEven ? 'text-right pl-3 md:pr-8' : 'text-left pr-3 md:pl-8'}`}>
-        <div className="bg-purple-100 dark:bg-purple-600 p-4 rounded shadow hover:scale-110 duration-300 ease-out">
+        <div className="bg-gray-300 dark:bg-gray-600 p-4 rounded shadow hover:scale-110 duration-300 ease-out">
           <h3 className="text-lg font-bold mb-2">{item.title}</h3>
           <p className="text-sm text-gray-600">{item.description}</p>
         </div>
       </div>
       <div className="w-2/12 flex justify-center">
-        <div className="w-4 md:h-4 bg-blue-500 ml-0.5 rounded-full z-10" />
+        <div className="w-4 md:h-4 bg-gray-500 dark:bg-gray-400 ml-0.5 rounded-full z-10" />
       </div>
       <div className={`w-5/12 ${isEven ? 'text-left pl-8' : 'text-right pr-8'}`}>
         <p className="text-sm font-semibold">{item.date}</p>
