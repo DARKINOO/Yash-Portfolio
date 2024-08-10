@@ -107,18 +107,18 @@ const Hero = () => {
            
             <div className="flex flex-col items-center justify-center">
                  <h2 className="text-2xl md:text-4xl font-medium text-gray-600 dark:text-gray-200 mb-44 mt-4">My Tech Stack</h2>
-      <div className="relative w-16 h-40 md:w-24 md:h-44">
+      <div className="relative w-16 h-40 md:w-24 md:h-44 ">
         {icons.map(({ Icon, color }, index) => (
           <div
             key={index}
-            className={`absolute w-12 h-12 md:w-16 md:h-16 flex items-center justify-center ${color} transition-all duration-1000 ease-in-out`}
+            className={`absolute w-12 h-12 hover:scale-110 md:w-16 md:h-16 rounded-[10%] flex items-center justify-center ${color} transition-all duration-1000 ease-in-out`}
             style={{
               transform: `rotate(${index * 60}deg) translateY(-120px) rotate(-${index * 60}deg)`,
               animation: `revolve 20s linear infinite`,
               animationDelay: `${-index * (20 / 6)}s`,
             }}
           >
-            <Icon className="text-5xl hover:scale-125" />
+            <Icon className="text-4xl md:text-5xl" />
           </div>
         ))}
       </div>
@@ -132,28 +132,8 @@ const Hero = () => {
           }
         }
       `}</style>
-      {/* <h2 className="text-3xl font-medium text-gray-200">My Tech Stack</h2> */}
     </div>
             
-
-
-            {/* <motion.div
-         initial={{ opacity: 0}}
-         whileInView={{ opacity: 1 }}
-         viewport={{ once:true }}
-         transition={{ duration: 1, delay: 2}} 
-         className='flex flex-col gap-2 md:flex-col text-7xl px-12 cursor-pointer md:px-0 w-full justify-center items-center py-24'
-        >
-        <p className='text-slate-900 font-medium dark:text-gray-200 md:mr-6 my-3 md:text-3xl md:my-5'>My Tech Stack</p>
-        <div className="grid grid-cols-2 gap-2 hover:scale-110 md:gap-4 md:grid-cols-3">
-        <DiHtml5 className='text-orange-600 mx-2 icon'/>
-        <DiCss3 className='text-blue-600 mx-2 icon'/>
-        <DiJavascript1 className='text-yellow-500 mx-2 icon'/>
-        <DiReact className='text-blue-500 mx-2 icon'/>
-        <RiTailwindCssFill className='text-blue-400 mx-2 icon' />
-        <DiNodejsSmall className='text-green-500 mx-2 icon'/>
-        </div>
-        </motion.div> */}
 
             {/* <motion.img
               src={'https://media.licdn.com/dms/image/D5603AQFkCESriPkZWw/profile-displayphoto-shrink_800_800/0/1721652082579?e=1727308800&v=beta&t=lhyW4xKRL_pFSD2ym2-vbxU8jtX7DhcjBu0FHRAbMMQ'}
@@ -167,7 +147,7 @@ const Hero = () => {
 
        
 
-        <div className='absolute inset-0 hidden md:block'>
+        <div className='absolute inset-0 hidden md:block z-20'>
             <ShinyEffect left={0} top={0} size={1000} />
         </div>
     </div>

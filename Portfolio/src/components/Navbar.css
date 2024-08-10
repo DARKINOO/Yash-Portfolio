@@ -1,11 +1,11 @@
 .vertical-lines-button {
-    position: fixed;
-    bottom: 20px;
-    margin-left: 19vw;
+    position: relative;
+    /* bottom: 20px;
+    margin-left: 19vw; */
     background: none;
     border: none;
     cursor: pointer;
-    z-index: 50;
+    z-index: 5;
     transform: transform 0.5s ease-in-out;
 }
 
