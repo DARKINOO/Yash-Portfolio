@@ -86,7 +86,7 @@ const Navbar = () => {
                             <li className='nav-item'><Link to='portfolio' onClick={closeNav} smooth={true} offset={50} duration={500}>Projects</Link></li>
                             <li className='nav-item'><Link to='timeline' onClick={closeNav} smooth={true} offset={50} duration={500}>Education</Link></li>
                             <li className='nav-item'><Link to='contact' onClick={closeNav} smooth={true} offset={50} duration={500}>Contact</Link></li>
-                            <li className='nav-item'><a href="https://drive.google.com/file/d/1B_GASHnmLIswSfaAn1T2ZimQdEyWo1hh/view?usp=drive_link">Resume</a></li>
+                            {/* <li className='nav-item'><a href="https://drive.google.com/file/d/1B_GASHnmLIswSfaAn1T2ZimQdEyWo1hh/view?usp=drive_link">Resume</a></li> */}
                         </ul>
                     </motion.div>
                 </div>

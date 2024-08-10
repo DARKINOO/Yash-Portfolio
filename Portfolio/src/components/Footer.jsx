@@ -23,7 +23,7 @@ const Footer = () => {
                         <li className='py-[4px] md:text-lg hover:text-purple-500 duration-300 ease-linear'><Link to='portfolio' smooth={true} offset={50} duration={500}>Projects</Link></li>
                         <li className='py-[4px] md:text-lg hover:text-purple-500 duration-300 ease-linear'><Link to='timeline' smooth={true} offset={50} duration={500}>Education</Link></li>
                         <li className='py-[4px] md:text-lg hover:text-purple-500 duration-300 ease-linear'><Link to='contact' smooth={true} offset={50} duration={500}>Contact</Link></li>
-                        <li className='py-[4px] md:text-lg hover:text-purple-500 duration-300 ease-linear'><a href="https://drive.google.com/file/d/1B_GASHnmLIswSfaAn1T2ZimQdEyWo1hh/view?usp=drive_link">Resume</a></li>
+                        {/* <li className='py-[4px] md:text-lg hover:text-purple-500 duration-300 ease-linear'><a href="https://drive.google.com/file/d/1B_GASHnmLIswSfaAn1T2ZimQdEyWo1hh/view?usp=drive_link">Resume</a></li> */}
                     </ul>
                     </div> 
             <img src={dp} className='md:hidden w-[14vw] h-[7vh] rounded-[50%]' alt="" />
@@ -34,7 +34,6 @@ const Footer = () => {
                 <a href="https://www.linkedin.com/in/yash-jain-38552828a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B8WOMCZPoSCye%2FskDAlzSkQ%3D%3D" className='hover:scale-125 duration-300 ease-in-out hover:text-purple-500 '><FaLinkedin/></a>
                 <a href="mailto:yashjain11sci@gmail.com" className='hover:scale-125 duration-300 ease-in-out hover:text-purple-500 '><FaEnvelope/></a>
             </div>
-
         </div>
         <div className="right">
           <img className='hidden md:flex w-[16vw] h-[8vh] rounded-[50%] md:w-[5vw] md:h-[10vh] ml-[17vw]' src={dp} alt="" />

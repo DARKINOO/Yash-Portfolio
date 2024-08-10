@@ -1,5 +1,4 @@
 import React from 'react'
-import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 import Reveal from './Reveal'
 
 const Contact = () => {
@@ -22,14 +21,14 @@ const Contact = () => {
                 id="name"
                 placeholder="Your Name ..."
                 name="name"
-                className="mb-2 w-full rounded-md border border-slate-900 py-2 pl-2 pr-4"
+                className="mb-2 w-full rounded-md border text-gray-900 border-slate-900 py-2 pl-2 pr-4"
             />
             <input
               type="email"
               id="email"
               placeholder="Your Email ..."
               name="email"
-              className="mb-2 w-full rounded-md border border-slate-900 py-2 pl-2 pr-4"
+              className="mb-2 w-full rounded-md border text-gray-900 border-slate-900 py-2 pl-2 pr-4"
             />
             <textarea
               name="textarea"
@@ -37,11 +36,11 @@ const Contact = () => {
               cols="30"
               rows="4"
               placeholder="How can i help you?"
-              className="mb-2 w-full rounded-md border border-slate-900 py-2 pl-2 pr-4"
+              className="mb-2 w-full rounded-md border text-gray-900 border-slate-900 py-2 pl-2 pr-4"
             />
             <button
               type="submit"
-              className="w-full py-3 rounded-md text-gray-100 font-semibold text-xl bg-primary-color hover:bg-purple-800"
+              className="w-full py-3 rounded-md text-gray-100 font-semibold text-xl bg-gray-600 hover:bg-slate-800 transition duration-300 ease-linear"
             >
               Send 
             </button>

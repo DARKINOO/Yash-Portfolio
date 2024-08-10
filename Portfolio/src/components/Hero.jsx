@@ -32,7 +32,7 @@ const Hero = () => {
   return (
     <>
     <div className="mt-24 max-w-[1200px] mx-auto relative">
-        <div className="grid md:grid-cols-2 place-items-center">
+        <div className="grid md:grid-cols-2 place-items-center z-50">
             <motion.div
             initial={{ opacity: 0, y: -50}}
             whileInView={{ opacity: 1, y:0 }}
@@ -47,7 +47,7 @@ const Hero = () => {
                 transition={{ duration: 1, delay: 0.5}}
                 className="dark:text-gray-200 md:text-4xl text-2xl tracking-tight mb-4 mt-12" id='int'>
                     Hey, I am <br />
-                    <span className='dark:text-purple-500 md:text-7xl mt-2 text-4xl' id='int2'>Yash Jain</span>
+                    <span className='text-slate-800 dark:text-slate-400 md:text-7xl mt-2 text-4xl' id='int2'>Yash Jain</span>
                 </motion.p>
                 <TypeAnimation
                    sequence={[
@@ -60,7 +60,7 @@ const Hero = () => {
                    ]}
                    speed={50}
                    repeat={Infinity}
-                   className='font-bold text-xl dark:text-gray-400 md:text-5xl italic mb-4'
+                   className='font-bold text-xl text-gray-600 dark:text-gray-400 md:text-5xl italic mb-4'
                 />
                
 
@@ -81,12 +81,12 @@ const Hero = () => {
                  transition={{ duration: 1, delay: 1.5}}
                  className='flex flex-row items-center gap-6 my-4 md:mb-0'
                 >
-                    <motion.button whileHover={{ scale: 1.05, boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)"}}
-                      className='z-10 cursor-pointer font-bold text-slate-800 dark:text-gray-200 md:w-auto p-4 border border-purple-900 dark:border-purple-400 rounded-xl'
+                    {/* <motion.button whileHover={{ scale: 1.05, boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)"}}
+                      className='z-10 cursor-pointer font-bold text-slate-800 dark:text-gray-200 md:w-auto p-4 border border-black dark:border-slate-400 rounded-xl '
                     ><a href="https://drive.google.com/file/d/1B_GASHnmLIswSfaAn1T2ZimQdEyWo1hh/view?usp=drive_link">Resume</a>
-                    </motion.button>
+                    </motion.button> */}
 
-                    <div className='flex text-[27px] md:text-4xl gap-6 flex-row  text-purple-900 dark:text-purple-400 z-20'>
+                    <div className='flex text-[27px] md:text-4xl gap-6 flex-row text-gray-800 dark:text-slate-300 cursor-pointer z-40'>
                         <motion.a className='dark:text-4xl' whileHover={{ scale: 1.2 }} href="https://github.com/DARKINOO">
                             <AiOutlineGithub/>
                         </motion.a>
@@ -147,7 +147,7 @@ const Hero = () => {
 
        
 
-        <div className='absolute inset-0 hidden md:block z-20'>
+        <div className='absolute inset-0 hidden md:block'>
             <ShinyEffect left={0} top={0} size={1000} />
         </div>
     </div>
