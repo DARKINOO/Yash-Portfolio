@@ -5,7 +5,7 @@ import xansite from "../assets/xansite.jpeg"
 import movie from "../assets/movie.png"
 import toolv from "../assets/toolv.png"
 import Reveal from './Reveal'
-import parakh from "../assets/parakh.png"
+import parakh from "../assets/parakh.jpeg"
 
 const projects = [
   {
