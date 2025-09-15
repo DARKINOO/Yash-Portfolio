@@ -37,7 +37,11 @@ const Footer = () => {
         </div>
         <div className="right">
           <img className='hidden md:flex w-[16vw] h-[8vh] rounded-[50%] md:w-[5vw] md:h-[10vh] ml-[17vw]' src={dp} alt="" />
-        <p className='text-slate-700 dark:text-gray-400 mt-3 text-[16px]'><span className='dark:text-gray-400 text-slate-700 text-[12px] mr-1'>@</span>2024 || Developed & Designed by Yash Jain.</p>
+       
+<p className='text-slate-700 dark:text-gray-400 mt-3 text-[16px]'>
+  <span className='dark:text-gray-400 text-slate-700 text-[14px] mr-2'>©</span>
+  2025 Yash Jain. All rights reserved.
+</p>
         </div>
     </div>
   )
