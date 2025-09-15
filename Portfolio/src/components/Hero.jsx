@@ -8,25 +8,25 @@ import {
     AiOutlineMail,
 } from "react-icons/ai";
 import {
-    DiCss3,
-    DiHtml5,
     DiJavascript1,
     DiNodejsSmall,
     DiReact,
+    DiMongodb,
 } from "react-icons/di";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { SiFastapi } from "react-icons/si";
 import { motion } from 'framer-motion';  
 
 
 
 const Hero = () => {
     const icons = [
-        { Icon: DiHtml5, color: 'text-orange-600' },
-        { Icon: DiCss3, color: 'text-blue-600' },
         { Icon: DiJavascript1, color: 'text-yellow-500' },
         { Icon: DiReact, color: 'text-blue-500' },
         { Icon: RiTailwindCssFill, color: 'text-blue-400' },
         { Icon: DiNodejsSmall, color: 'text-green-500' },
+        { Icon: DiMongodb, color: 'text-green-600' },
+        { Icon: SiFastapi, color: 'text-teal-500' },
       ];
 
   return (
@@ -51,11 +51,11 @@ const Hero = () => {
                 </motion.p>
                 <TypeAnimation
                    sequence={[
-                    "Frontend Dev",
+                    "Full Stack Dev",
                     1000,
                     "Web Designer",
                     1000,
-                    "Writer",
+                    "Aspiring ML Engineer",
                     1000
                    ]}
                    speed={50}
@@ -70,8 +70,7 @@ const Hero = () => {
                 viewport={{ once:true }}
                 transition={{ duration: 1, delay: 1}}
                 className="dark:text-gray-300 max-w-[300px] md:max-w-[500px] md:text-2xl text-lg mt-4 mb-6">
-                    I am a passionate frontend developer aspiring to be Full stack web developer.
-
+                   Full Stack Developer | Aspiring Software Engineer | AI/ML Enthusiast.
                 </motion.p>
 
                 <motion.div
