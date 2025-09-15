@@ -5,16 +5,16 @@ import xansite from "../assets/xansite.jpeg"
 import movie from "../assets/movie.png"
 import toolv from "../assets/toolv.png"
 import Reveal from './Reveal'
+import parakh from "../assets/parakh.jpeg"
 
 const projects = [
   {
-    img: movie,
-    title: "Movie Recommendation Webpage",
-    description: "Crafted an interactive movie recommendation hub leveraging Tailwind CSS and JavaScript. This responsive platform offers personalized film suggestions based on user preferences. Elevated user engagement through sleek GSAP animations.",
+    img: parakh,
+    title: "Parakh AI",
+    description: "Developed an AI-powered interview system that conducts real-time interviews based on the candidate's resume and position. Features include authentication, a live dashboard, mic and timer functionality, and smooth GSAP animations for an engaging user experience. Built with React, Node.js, and JWT authentication.",
     links: {
-      site: "https://movie-reco-page.vercel.app/",
-      github: "https://github.com/DARKINOO/Movie-Rec-page",
-    },
+      site: "https://parakhai-1.vercel.app/",
+      github: "https://github.com/DARKINOO/Parakh.AI",
   },
   {
     img: toolv,
