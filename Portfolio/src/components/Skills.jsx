@@ -36,7 +36,6 @@ const skills = [
       { name: 'FastAPI', icon: <SiFastapi className='text-green-600' /> },
       { name: 'MongoDB', icon: <DiMongodb className='text-green-600' /> },
       { name: 'Docker', icon: <DiDocker className='text-blue-600' /> },
-      { name: 'React', icon: <DiReact className='text-blue-800' /> },
       { name: 'GitHub', icon: <DiGithubBadge className='text-gray-600' /> },
     ]
   }
