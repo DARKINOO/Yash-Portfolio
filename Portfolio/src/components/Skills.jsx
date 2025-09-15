@@ -10,10 +10,11 @@ import {
     DiMongodb,
     DiGithubBadge,
     DiJavascript,
+    DiDocker,
 } from "react-icons/di";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiCplusplus } from "react-icons/si";
-import { DiJava } from "react-icons/di";
+import { SiCplusplus, SiFastapi, SiExpress } from "react-icons/si";
+import { SiC } from "react-icons/si";
 
 const skills = [
     {
@@ -31,7 +32,10 @@ const skills = [
     category: 'Fullstack',
     technologies: [
       { name: 'Node Js', icon: <DiNodejsSmall className='text-green-600' /> },
+      { name: 'Express', icon: <SiExpress className='text-gray-600 dark:text-gray-300' /> },
+      { name: 'FastAPI', icon: <SiFastapi className='text-green-600' /> },
       { name: 'MongoDB', icon: <DiMongodb className='text-green-600' /> },
+      { name: 'Docker', icon: <DiDocker className='text-blue-600' /> },
       { name: 'React', icon: <DiReact className='text-blue-800' /> },
       { name: 'GitHub', icon: <DiGithubBadge className='text-gray-600' /> },
     ]
@@ -67,8 +71,8 @@ const Skills = () => {
               </div>
 
               <div className="flex gap-3">
-              <span className='text-2xl text-orange-900 dark:text-orange-600'><DiJava /></span>
-              <span className='text-gray-700 dark:text-slate-300'>Java</span>
+              <span className='text-xl text-orange-900 dark:text-orange-600'><SiC /></span>
+              <span className='text-gray-700 dark:text-slate-300'>C</span>
               </div>
 
               <div className="flex gap-3">
