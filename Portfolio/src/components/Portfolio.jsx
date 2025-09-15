@@ -6,6 +6,7 @@ import movie from "../assets/movie.png"
 import toolv from "../assets/toolv.png"
 import Reveal from './Reveal'
 import parakh from "../assets/parakh.jpeg"
+import hisab from "../assets/hisab.jpeg"
 
 const projects = [
   {
@@ -17,12 +18,12 @@ const projects = [
       github: "https://github.com/DARKINOO/Parakh.AI",
   },
   {
-    img: toolv,
-    title: "ToolVerse",
-    description: "Developed a versatile web application using React and Tailwind CSS. This all-in-one platform integrates essential tools including a to-do list, calculator, and dictionary. Leveraged React's component-based architecture for seamless functionality and Tailwind for a sleek, responsive design.",
+    img: hisab,
+    title: "HisabKitab-AI",
+    description: "Built an AI-powered personal finance tracker that helps users manage expenses and gain financial insights. Features include secure JWT authentication, real-time expense tracking, interactive dashboards with Recharts, and intelligent ML models for next-month expense prediction and auto-categorization of transactions. Developed using React, FastAPI, MongoDB, and scikit-learn.",
     links: {
-      site: "https://tool-verse.vercel.app/",
-      github: "https://github.com/DARKINOO/ToolVerse",
+      site: "https://hisabkitab-ai.vercel.app/",
+      github: "https://github.com/DARKINOO/Finance-Traker",
     },
   },
   {
